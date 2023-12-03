@@ -6,7 +6,7 @@ const ExpenseList = () => {
     const { expenses,currency } = useContext(AppContext);
 
     return (
-        <table className='table'>
+        <table className='table' style={{background:'lightgrey', margin:20,marginRight:'5rem',borderRadius:30}}>
               <thead className="thead-light">
             <tr>
               <th scope="col"><b>Department</b></th>
@@ -17,7 +17,7 @@ const ExpenseList = () => {
             </tr>
           </thead>
             <tbody>
-           {currency} {expenses.map((expense) => (
+           {expenses.map((expense) => (
                 <ExpenseItem id={expense.id} key={expense.id} name={expense.name} cost={expense.cost} />
             ))}
             </tbody>
@@ -26,3 +26,6 @@ const ExpenseList = () => {
 };
 
 export default ExpenseList;
+
+
+
