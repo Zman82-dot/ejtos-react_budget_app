@@ -13,11 +13,11 @@ import CurrencyDropdown from './components/CurrencyDropdown';
 
 const App = () => {
     return (
-        <AppProvider style={{backgroundImage:'linear-gradient(white,black)'}}>
-            <div className='card' style={{backgroundImage:'url("https://www.passionateinmarketing.com/wp-content/uploads/2020/08/data-original-3.jpg")',color:"white"}}>
-                <h1 className='mt-3'>Company's Budget Allocation</h1>
+        <AppProvider >
+            <div className='card' style={{backgroundImage:'url("https://g.foolcdn.com/editorial/images/468175/gettyimages-501199714.jpg")',color:"white"}}>
+                <h1 className='mt-3'>Budget Allocation</h1>
                 <div className='row mt-3'>
-                    <div className='col-sm'>
+                    <div className='col-sm'style={{boxshadow:2,}}>
                         <Budget />
                     </div>
                     <div className='col-sm'>
@@ -27,8 +27,10 @@ const App = () => {
                         <ExpenseTotal />
                     </div>
                 </div>
-                <div className='mt-3'>Currency
+                <div className='row mt-3'><h3>Currency</h3>
+                <div className='row'>
                             <CurrencyDropdown />
+                            </div>
                         </div>
                 <h3 className='mt-3'>Allocation</h3>
                 <div className='row '>
