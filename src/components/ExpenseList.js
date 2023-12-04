@@ -6,8 +6,8 @@ const ExpenseList = () => {
     const { expenses,currency } = useContext(AppContext);
 
     return (
-        <table className='table' style={{background:'lightgrey', margin:20,marginRight:'5rem',borderRadius:30}}>
-              <thead className="thead-light">
+        <table className='table' style={{background:"linear-gradient(white,lightgrey)", margin:20,marginRight:'5rem',borderRadius:30}}>
+              <thead className="thead" style={{background:"#3c3c31",color:"whitesmoke",borderRadius:30,}}>
             <tr>
               <th scope="col"><b>Department</b></th>
               <th scope="col">Allocated Budget</th>
@@ -26,6 +26,4 @@ const ExpenseList = () => {
 };
 
 export default ExpenseList;
-
-
 
